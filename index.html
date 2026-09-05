@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIGZ Barber</title>
+<meta name="description" content="DIGZ Barber — sharp cuts, clean fades and fresh styles on Whitehall Road.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#f5f5f5;line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(10,10,10,.94);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:18px 7%;border-bottom:1px solid #222}
+.logo{font-size:25px;font-weight:900;letter-spacing:2px}
+.logo span{color:#d6a84f}
+nav a{color:#ddd;text-decoration:none;margin-left:24px;font-size:14px}
+nav a:hover{color:#d6a84f}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 7% 70px;background:radial-gradient(circle at 75% 35%,#3a2b12 0,#17120a 22%,#0b0b0b 55%)}
+.hero-content{max-width:720px}
+.eyebrow{color:#d6a84f;text-transform:uppercase;letter-spacing:4px;font-size:13px;font-weight:bold}
+h1{font-size:clamp(58px,12vw,125px);line-height:.9;margin:18px 0;font-weight:950;letter-spacing:-5px}
+h1 span{color:#d6a84f}
+.hero p{font-size:19px;color:#bbb;max-width:590px}
+.buttons{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 23px;border-radius:4px;text-decoration:none;font-weight:bold}
+.primary{background:#d6a84f;color:#111}
+.secondary{border:1px solid #555;color:#fff}
+section{padding:90px 7%}
+.section-title{font-size:42px;margin-bottom:14px}
+.section-title span{color:#d6a84f}
+.intro{color:#aaa;max-width:680px;margin-bottom:40px}
+.about{background:#111}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#181818;border:1px solid #292929;padding:28px;border-radius:8px}
+.card .icon{font-size:32px;margin-bottom:15px}
+.card h3{margin-bottom:8px;font-size:21px}
+.card p{color:#aaa}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:10px}.price-group{background:#181818;border:1px solid #292929;padding:26px;border-radius:8px}.price-group h3{font-size:24px;margin-bottom:10px;color:#d6a84f}.price-subheading{margin-top:26px}.price-row{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-bottom:1px solid #292929;color:#ddd}.price-row:last-child{border-bottom:0}.price-row strong{color:#d6a84f;white-space:nowrap}.booking-note{text-align:center;margin-top:28px;color:#d6a84f;font-weight:bold;font-size:18px}
+.location{background:#d6a84f;color:#111;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.location .section-title span{color:#fff}
+.location p{font-size:18px}
+.mapbox{height:260px;background:#151515;color:#aaa;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;border:2px solid #111;font-size:18px}
+.contact{background:#0b0b0b;text-align:center}
+.phone{display:inline-block;margin-top:20px;color:#d6a84f;font-size:24px;font-weight:bold;text-decoration:none}
+footer{padding:30px 7%;background:#070707;color:#777;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:700px){
+nav{padding:15px 5%}.logo{font-size:20px}nav div{display:none}
+.hero{padding-left:5%;padding-right:5%}h1{font-size:70px}
+section{padding:70px 5%}.cards{grid-template-columns:1fr}.location{grid-template-columns:1fr}.price-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">DIGZ <span>BARBER</span></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Whitehall Road • Barber Shop</div>
+    <h1>DIGZ <span>BARBER</span></h1>
+    <p>Sharp cuts. Clean fades. Fresh confidence. Whatever style you're after, come through to DIGZ Barber and leave looking your best.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#services">Explore Services</a>
+      <a class="btn secondary" href="#location">Find Us</a>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="eyebrow">The DIGZ experience</div>
+  <h2 class="section-title">Built for a <span>fresh look.</span></h2>
+  <p class="intro">At DIGZ Barber, every haircut is about more than just getting the job done. Whether you know exactly what you want or want help choosing a style, we're here to get you looking sharp.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">✂️</div><h3>Any Style</h3><p>From classic cuts to modern looks, bring your idea and we'll work with it.</p></div>
+    <div class="card"><div class="icon">💈</div><h3>Clean Finish</h3><p>Attention to the details that turn a decent cut into a fresh one.</p></div>
+    <div class="card"><div class="icon">🔥</div><h3>Fresh Every Time</h3><p>A welcoming local barbershop focused on making you feel confident when you leave.</p></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="eyebrow">What we do</div>
+  <h2 class="section-title">Services</h2>
+  <p class="intro">Whatever haircut you're after, DIGZ Barber can help bring the style to life.</p>
+  <div class="cards">
+    <div class="card"><h3>Fades</h3><p>Clean fades and blended styles tailored to your look.</p></div>
+    <div class="card"><h3>Classic Cuts</h3><p>Timeless cuts, trims and tidy-ups.</p></div>
+    <div class="card"><h3>Modern Styles</h3><p>Bring a reference or describe what you're after.</p></div>
+  </div>
+</section>
+
+<section id="prices" class="about">
+  <div class="eyebrow">Price list</div>
+  <h2 class="section-title">Simple <span>pricing.</span></h2>
+  <p class="intro">Our current prices for cuts, shape-ups and extras.</p>
+  <div class="price-grid">
+    <div class="price-group">
+      <h3>Adults</h3>
+      <div class="price-row"><span>Hair Cut &amp; Beard</span><strong>£25</strong></div>
+      <div class="price-row"><span>All Fade Cut (No Beard)</span><strong>£15</strong></div>
+      <div class="price-row"><span>All Fade Cut (with beard)</span><strong>£18</strong></div>
+      <div class="price-row"><span>Hair Cut One Level</span><strong>£20</strong></div>
+      <div class="price-row"><span>Hair Cut One Level (with beard)</span><strong>£23</strong></div>
+      <div class="price-row"><span>Bold Hair Cut with Beard Off</span><strong>£20</strong></div>
+      <div class="price-row"><span>Bold Hair Cut with Beard On</span><strong>£23</strong></div>
+      <div class="price-row"><span>Ladies Style Cut</span><strong>£25</strong></div>
+      <div class="price-row"><span>Eye Brows Shape Up</span><strong>£7</strong></div>
+    </div>
+    <div class="price-group">
+      <h3>Shape Up</h3>
+      <div class="price-row"><span>Head &amp; Beard</span><strong>£16</strong></div>
+      <div class="price-row"><span>Head Only</span><strong>£10</strong></div>
+      <div class="price-row"><span>Beard Only</span><strong>£10</strong></div>
+
+      <h3 class="price-subheading">One Level (Kids &amp; Teenagers)</h3>
+      <div class="price-row"><span>0–10 yrs</span><strong>£10</strong></div>
+      <div class="price-row"><span>11–12 yrs</span><strong>£12</strong></div>
+      <div class="price-row"><span>13–14 yrs</span><strong>£13</strong></div>
+      <div class="price-row"><span>15 yrs</span><strong>£15</strong></div>
+
+      <h3 class="price-subheading">Fades / Afros / High Tops (Kids &amp; Teenagers)</h3>
+      <div class="price-row"><span>0–10 yrs</span><strong>£12</strong></div>
+      <div class="price-row"><span>11–12 yrs</span><strong>£14</strong></div>
+      <div class="price-row"><span>13–14 yrs</span><strong>£15</strong></div>
+      <div class="price-row"><span>15 yrs</span><strong>£17</strong></div>
+
+      <h3 class="price-subheading">Extras</h3>
+      <div class="price-row"><span>Additional Hair Products</span><strong>£2</strong></div>
+      <div class="price-row"><span>Designs</span><strong>£5</strong></div>
+      <div class="price-row"><span>Hot Towel</span><strong>£4</strong></div>
+    </div>
+  </div>
+  <p class="booking-note">Extra £3 on all bookings</p>
+</section>
+
+<section class="location" id="location">
+  <div>
+    <div class="eyebrow">Come see us</div>
+    <h2 class="section-title">Find <span>DIGZ.</span></h2>
+    <p>📍 292 Whitehall Road</p>
+    <p>BS5 7BG</p>
+  </div>
+  <div class="mapbox">📍<br>292 Whitehall Road<br>BS5 7BG</div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="eyebrow">Get in touch</div>
+  <h2 class="section-title">Ready for a <span>fresh cut?</span></h2>
+  <p class="intro" style="margin:0 auto">Give DIGZ Barber a call to find out more.</p>
+  <a class="phone" href="tel:07534589310">07534 589310</a>
+</section>
+
+<footer>
+  <div><strong>DIGZ BARBER</strong> — Whitehall Road</div>
+  <div>© 2026 DIGZ Barber</div>
+</footer>
+</body>
+</html>
